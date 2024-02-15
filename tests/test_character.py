@@ -6,3 +6,11 @@ class TestCharacterInitWithName(TestCase):
         ARBITRARY_NAME = "Bob"
         testobj = Character(ARBITRARY_NAME)
         self.assertEqual(ARBITRARY_NAME, testobj.name)
+
+class TestCharacterMove(TestCase):
+    def test_move(self):
+        direction = "n"
+        
+        testobj = Character("Bob")
+        testobj.move(direction)
+        self.assertEqual(direction,testobj.direction)
