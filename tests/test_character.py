@@ -5,4 +5,4 @@ class TestCharacterInitWithName(TestCase):
     def test_init(self):
         ARBITRARY_NAME = "Bob"
         testobj = Character(ARBITRARY_NAME)
-        selfc.assertEqual(ARBITRARY_NAME, testobj.name)
+        self.assertEqual(ARBITRARY_NAME, testobj.name)
