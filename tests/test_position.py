@@ -5,5 +5,6 @@ class TestPositionInit(TestCase):
     def test_init(self):
         test_x = 5
         test_y = 5
-        testobj = Position(test_x,test_y)
-        self.assertEqual([5,5], testobj.position)
+        testposition = Position(test_x,test_y)
+        self.assertEquals(test_x,testposition.x)
+        self.assertEquals(test_y,testposition.y)
