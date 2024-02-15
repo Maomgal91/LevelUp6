@@ -22,15 +22,15 @@ class Direction(Enum):
     EAST = "e"
     WEST = "w"
 
+#This class is for load/save
 class CharacterNotFoundException(Exception):
     pass
 
+#This class is for reacting to walls
 class InvalidMoveException(Exception):
     pass
 
 class GameController:
-
-
     status: GameStatus
 
     def __init__(self):
@@ -48,6 +48,7 @@ class GameController:
             self.status.character_name = DEFAULT_CHARACTER_NAME
 
     def move(self, direction: Direction) -> None:
+        # This should call Character's move function
         # TODO: Implement move - should call something on another class
         # TODO: Should probably also update the game results
         pass
