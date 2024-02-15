@@ -1,13 +1,13 @@
 from levelup.position import Position
 from typing import Tuple
-from levelup.direction import Direction
+from levelup.controller import Direction
 
 class Map ():
 
     starting_position = Position(0,0)
-    positions = []
+    #positions = []
     size: Tuple[int, int] = (10, 10)
-
+    positions = [size]
     # Exists for easy testing
     num_positions = size[0]*size[1]
 
@@ -20,7 +20,7 @@ class Map ():
         print("is_position_valid method not yet implemented")
         return False        
 
-    def calculate_new_position(self, current_position: Position, direction: Direction) -> Position:
+    # def calculate_new_position(self, current_position: Position, direction: Direction) -> Position:
         # TODO: implement method here and remove the print statement below
-        print("calculate_new_position method not yet implemented")
-        return None
+        # print("calculate_new_position method not yet implemented")
+        # return None
