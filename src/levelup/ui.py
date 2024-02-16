@@ -39,7 +39,11 @@ class GameApp:
         #character = self.prompt("Enter character name", lambda x: len(x) > 0)
         character = self.prompt(CHARACTERPROMPT, lambda x: len(x) > 0)
         self.controller.create_character(character)
-        print(f"Welcome, {self.controller.status.character_name}")
+
+        WELCOMEPROMPT = "You look around to see a desolate landscape as far as the eye can see. Welcome to the desert "
+        #print(f"Welcome, {self.controller.status.character_name}")
+        #print(f""WELCOMEPROMPT " " {self.controller.status.character_name}")
+        print(f"{WELCOMEPROMPT}{self.controller.status.character_name}")
 
     def move_loop(self):
         while True:
