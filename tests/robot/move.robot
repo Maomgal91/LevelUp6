@@ -2,6 +2,7 @@
 Documentation     I want to move my character. If they attempt to move past a boundary, the move results in no change in position. Test start of game. Let's play \n\n 
 Test Template     Move character
 Library           MoveLibrary.py
+gamerErin.png
 
 
 *** Test Cases ***                  StartingX     StartingY     StartingMoveCount     Direction     EndingX     EndingY     EndingMoveCount
