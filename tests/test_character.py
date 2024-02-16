@@ -9,8 +9,8 @@ class TestCharacterInitWithName(TestCase):
 
 class TestCharacterMove(TestCase):
     def test_move(self):
-        direction = "n"
+        self.direction = "n"
         
         testobj = Character("Bob")
-        testobj.move(direction)
-        self.assertEqual(direction,testobj.direction)
+        testobj.move(self.direction)
+        self.assertEqual(self.direction,testobj.direction)
