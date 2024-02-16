@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation     I want to move my character. If they attempt to move past a boundary, the move results in no change in position. Test start of game. Let's play \n\n 
 Test Template     Move character
-Library           MoveLibrary.py
+Library           MoveLibrary.py 
 https://desertsteel.net/cdn/shop/files/saguaro-web-34_c608300e-9aba-4dec-aa4a-f1bf5b321cb7.jpg
 
 
