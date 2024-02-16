@@ -25,7 +25,17 @@ class GameApp:
         return response
 
     def create_character(self):
-        CHARACTERPROMPT = "You wake up on a sandy beach with a stranger shaking you awake. He asks for your name:"
+        CHARACTERPROMPT = '''
+            ,*-.
+            |  |
+        ,.  |  |   You wake up next to a large blooming saguaro
+        | |_|  | ,.   as a stranger shakes you awake.
+        `---.  |_| |
+            |  .--`
+            |  |      He asks for your name:
+            |  |
+'''
+        #CHARACTERPROMPT = "You wake up on a sandy beach with a stranger shaking you awake. He asks for your name:"
         #character = self.prompt("Enter character name", lambda x: len(x) > 0)
         character = self.prompt(CHARACTERPROMPT, lambda x: len(x) > 0)
         self.controller.create_character(character)
