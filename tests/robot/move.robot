@@ -24,7 +24,7 @@ Spec by example15                    9             0            83              
 Spec by example16                    9             0            36                    WEST          8           0           37   
 Spec by example17                    5             5            57                    NORTH         5           6          58 
 Spec by example18                    5             5            75                    SOUTH         5           4          76
-Spec by example19                    5             5            45                    EAST          6           5          45   
+Spec by example19                    5             5            45                    EAST          6           5          46   
 Spec by example20                    5             5            53                    WEST          4           5           54
 
 *** Keywords ***
