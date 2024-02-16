@@ -25,7 +25,9 @@ class GameApp:
         return response
 
     def create_character(self):
-        character = self.prompt("Enter character name", lambda x: len(x) > 0)
+        CHARACTERPROMPT = "You wake up on a sandy beach with a stranger shaking you awake. He asks for your name:"
+        # character = self.prompt("Enter character name", lambda x: len(x) > 0)
+        character = self.prompt(CHARACTERPROMPT, lambda x: len(x) > 0)
         self.controller.create_character(character)
         print(f"Welcome, {self.controller.status.character_name}")
 
