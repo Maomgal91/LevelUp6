@@ -48,7 +48,7 @@ class GameApp:
     def move_loop(self):
         while True:
             response = self.prompt(
-                f"Where would you like to go? {VALID_DIRECTIONS}\n(or q to quit)",
+                f"Where would you like to go? {VALID_DIRECTIONS}\n(or q to quit this world)",
                 lambda x: x in VALID_COMMANDS,
             )
             if response == "q":
