@@ -1,10 +1,11 @@
 from unittest import TestCase
 from levelup.position import Position
 
-class TestPositionInit(TestCase):
+
+class TestPositionInitWithXY(TestCase):
     def test_init(self):
-        test_x = 5
-        test_y = 5
-        testposition = Position(test_x,test_y)
-        self.assertEquals(test_x,testposition.x)
-        self.assertEquals(test_y,testposition.y)
+        ARBITRARY_X = 3
+        ARBITRARY_Y = 4
+        testobj = Position(3,4)
+        self.assertEqual(ARBITRARY_X, testobj.x)
+        self.assertEqual(ARBITRARY_Y, testobj.y)
